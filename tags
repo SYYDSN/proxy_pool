@@ -1,0 +1,146 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+BlockingConnectionPool	DB/SsdbClient.py	/^from ssdb.connection import BlockingConnectionPool$/;"	kind:namespace	line:16
+BlockingScheduler	Schedule/ProxyRefreshSchedule.py	/^from apscheduler.schedulers.blocking import BlockingScheduler$/;"	kind:namespace	line:16
+ConfigParse	Util/GetConfig.py	/^from Util.utilClass import ConfigParse$/;"	kind:namespace	line:17
+ConfigParse	Util/utilClass.py	/^class ConfigParse(ConfigParser):$/;"	kind:class	line:39
+ConfigParser	Util/utilClass.py	/^from ConfigParser import ConfigParser$/;"	kind:namespace	line:36
+DbClient	DB/DbClient.py	/^class DbClient(object):$/;"	kind:class	line:24
+DbClient	Manager/ProxyManager.py	/^from DB.DbClient import DbClient$/;"	kind:namespace	line:16
+DbClient.py	DB/DbClient.py	1;"	kind:file	line:1
+Flask	Api/ProxyApi.py	/^from flask import Flask, jsonify, request$/;"	kind:namespace	line:16
+GetConfig	DB/DbClient.py	/^from Util.GetConfig import GetConfig$/;"	kind:namespace	line:18
+GetConfig	Manager/ProxyManager.py	/^from Util.GetConfig import GetConfig$/;"	kind:namespace	line:17
+GetConfig	Util/GetConfig.py	/^class GetConfig(object):$/;"	kind:class	line:21
+GetConfig.py	Util/GetConfig.py	1;"	kind:file	line:1
+GetFreeProxy	Manager/ProxyManager.py	/^from ProxyGetter.getFreeProxy import GetFreeProxy$/;"	kind:namespace	line:18
+GetFreeProxy	ProxyGetter/getFreeProxy.py	/^class GetFreeProxy(object):$/;"	kind:class	line:24
+LazyProperty	Util/GetConfig.py	/^from Util.utilClass import LazyProperty$/;"	kind:namespace	line:18
+LazyProperty	Util/utilClass.py	/^class LazyProperty(object):$/;"	kind:class	line:18
+Process	Schedule/ProxyRefreshSchedule.py	/^from multiprocessing import Process$/;"	kind:namespace	line:17
+ProxyApi.py	Api/ProxyApi.py	1;"	kind:file	line:1
+ProxyManager	Api/ProxyApi.py	/^from Manager.ProxyManager import ProxyManager$/;"	kind:namespace	line:21
+ProxyManager	Manager/ProxyManager.py	/^class ProxyManager(object):$/;"	kind:class	line:21
+ProxyManager	Schedule/ProxyRefreshSchedule.py	/^from Manager.ProxyManager import ProxyManager$/;"	kind:namespace	line:24
+ProxyManager.py	Manager/ProxyManager.py	1;"	kind:file	line:1
+ProxyRefreshSchedule	Schedule/ProxyRefreshSchedule.py	/^class ProxyRefreshSchedule(ProxyManager):$/;"	kind:class	line:27
+ProxyRefreshSchedule.py	Schedule/ProxyRefreshSchedule.py	1;"	kind:file	line:1
+RedisClient.py	DB/RedisClient.py	1;"	kind:file	line:1
+ReidsClient	DB/RedisClient.py	/^class ReidsClient(object):$/;"	kind:class	line:12
+SSDB	DB/SsdbClient.py	/^from ssdb import SSDB$/;"	kind:namespace	line:17
+Singleton	DB/DbClient.py	/^from Util.utilClass import Singleton$/;"	kind:namespace	line:19
+Singleton	Util/utilClass.py	/^class Singleton(type):$/;"	kind:class	line:51
+SsdbClient	DB/SsdbClient.py	/^class SsdbClient(object):$/;"	kind:class	line:22
+SsdbClient.py	DB/SsdbClient.py	1;"	kind:file	line:1
+__author__	Api/ProxyApi.py	/^__author__ = 'JHao'$/;"	kind:variable	line:14
+__author__	Api/__init__.py	/^__author__ = 'JHao'/;"	kind:variable	line:13
+__author__	DB/DbClient.py	/^__author__ = 'JHao'$/;"	kind:variable	line:14
+__author__	DB/SsdbClient.py	/^__author__ = 'JHao'$/;"	kind:variable	line:14
+__author__	Manager/ProxyManager.py	/^__author__ = 'JHao'$/;"	kind:variable	line:14
+__author__	Manager/__init__.py	/^__author__ = 'JHao'/;"	kind:variable	line:13
+__author__	Schedule/ProxyRefreshSchedule.py	/^__author__ = 'JHao'$/;"	kind:variable	line:14
+__author__	Schedule/__init__.py	/^__author__ = 'JHao'/;"	kind:variable	line:13
+__author__	Util/GetConfig.py	/^__author__ = 'JHao'$/;"	kind:variable	line:14
+__author__	Util/utilClass.py	/^__author__ = 'JHao'$/;"	kind:variable	line:15
+__author__	__init__.py	/^__author__ = 'JHao'/;"	kind:variable	line:13
+__call__	Util/utilClass.py	/^    def __call__(cls, *args, **kwargs):$/;"	kind:member	line:58
+__get__	Util/utilClass.py	/^    def __get__(self, instance, owner):$/;"	kind:member	line:27
+__initDbClient	DB/DbClient.py	/^    def __initDbClient(self):$/;"	kind:member	line:54
+__init__	DB/DbClient.py	/^    def __init__(self):$/;"	kind:member	line:46
+__init__	DB/RedisClient.py	/^    def __init__(self, name, host, port):$/;"	kind:member	line:17
+__init__	DB/SsdbClient.py	/^    def __init__(self, name, host, port):$/;"	kind:member	line:32
+__init__	Manager/ProxyManager.py	/^    def __init__(self):$/;"	kind:member	line:26
+__init__	ProxyGetter/getFreeProxy.py	/^    def __init__(self):$/;"	kind:member	line:29
+__init__	Schedule/ProxyRefreshSchedule.py	/^    def __init__(self):$/;"	kind:member	line:32
+__init__	Util/GetConfig.py	/^    def __init__(self):$/;"	kind:member	line:26
+__init__	Util/utilClass.py	/^    def __init__(self):$/;"	kind:member	line:44
+__init__	Util/utilClass.py	/^    def __init__(self, func):$/;"	kind:member	line:24
+__init__.py	Api/__init__.py	1;"	kind:file	line:1
+__init__.py	DB/__init__.py	1;"	kind:file	line:1
+__init__.py	Manager/__init__.py	1;"	kind:file	line:1
+__init__.py	ProxyGetter/__init__.py	1;"	kind:file	line:1
+__init__.py	Schedule/__init__.py	1;"	kind:file	line:1
+__init__.py	Util/__init__.py	1;"	kind:file	line:1
+__init__.py	__init__.py	1;"	kind:file	line:1
+__metaclass__	DB/DbClient.py	/^    __metaclass__ = Singleton$/;"	kind:variable	line:44
+_inst	Util/utilClass.py	/^    _inst = {}$/;"	kind:variable	line:56
+account	DB/DbClient.py	/^    account = DbClient()$/;"	kind:variable	line:89
+api_list	Api/ProxyApi.py	/^api_list = {$/;"	kind:variable	line:25
+app	Api/ProxyApi.py	/^app = Flask(__name__)$/;"	kind:variable	line:23
+changeTable	DB/DbClient.py	/^    def changeTable(self, name):$/;"	kind:member	line:84
+changeTable	DB/SsdbClient.py	/^    def changeTable(self, name):$/;"	kind:member	line:87
+db_host	Util/GetConfig.py	/^    def db_host(self):$/;"	kind:member	line:41
+db_name	Util/GetConfig.py	/^    def db_name(self):$/;"	kind:member	line:37
+db_port	Util/GetConfig.py	/^    def db_port(self):$/;"	kind:member	line:45
+db_type	Util/GetConfig.py	/^    def db_type(self):$/;"	kind:member	line:33
+decorate	Util/utilFunction.py	/^    def decorate(*args, **kwargs):$/;"	kind:function	line:18
+delete	Api/ProxyApi.py	/^def delete():$/;"	kind:function	line:57
+delete	DB/DbClient.py	/^    def delete(self, value, **kwargs):$/;"	kind:member	line:78
+delete	DB/RedisClient.py	/^    def delete(self, value):$/;"	kind:member	line:56
+delete	DB/SsdbClient.py	/^    def delete(self, key):$/;"	kind:member	line:76
+delete	Manager/ProxyManager.py	/^    def delete(self, proxy):$/;"	kind:member	line:56
+etree	Util/utilFunction.py	/^    from lxml import etree$/;"	kind:namespace	line:47
+freeProxyFifth	ProxyGetter/getFreeProxy.py	/^    def freeProxyFifth():$/;"	kind:member	line:93
+freeProxyFirst	ProxyGetter/getFreeProxy.py	/^    def freeProxyFirst(page=10):$/;"	kind:member	line:34
+freeProxyFourth	ProxyGetter/getFreeProxy.py	/^    def freeProxyFourth():$/;"	kind:member	line:81
+freeProxySecond	ProxyGetter/getFreeProxy.py	/^    def freeProxySecond(proxy_number=100):$/;"	kind:member	line:50
+freeProxyThird	ProxyGetter/getFreeProxy.py	/^    def freeProxyThird(days=1):$/;"	kind:member	line:64
+get	Api/ProxyApi.py	/^def get():$/;"	kind:function	line:39
+get	DB/DbClient.py	/^    def get(self, **kwargs):$/;"	kind:member	line:69
+get	DB/RedisClient.py	/^    def get(self):$/;"	kind:member	line:28
+get	DB/SsdbClient.py	/^    def get(self):$/;"	kind:member	line:43
+get	Manager/ProxyManager.py	/^    def get(self):$/;"	kind:member	line:48
+getAll	Api/ProxyApi.py	/^def getAll():$/;"	kind:function	line:51
+getAll	DB/DbClient.py	/^    def getAll(self):$/;"	kind:member	line:81
+getAll	DB/RedisClient.py	/^    def getAll(self):$/;"	kind:member	line:64
+getAll	DB/SsdbClient.py	/^    def getAll(self):$/;"	kind:member	line:84
+getAll	Manager/ProxyManager.py	/^    def getAll(self):$/;"	kind:member	line:65
+getFreeProxy.py	ProxyGetter/getFreeProxy.py	1;"	kind:file	line:1
+getHtmlTree	ProxyGetter/getFreeProxy.py	/^from Util.utilFunction import robustCrawl, getHtmlTree$/;"	kind:namespace	line:21
+getHtmlTree	Util/utilFunction.py	/^def getHtmlTree(url, **kwargs):$/;"	kind:function	line:39
+gg	ProxyGetter/getFreeProxy.py	/^    gg = GetFreeProxy()$/;"	kind:variable	line:108
+gg	Util/GetConfig.py	/^    gg = GetConfig()$/;"	kind:variable	line:54
+index	Api/ProxyApi.py	/^def index():$/;"	kind:function	line:34
+json	DB/RedisClient.py	/^import json$/;"	kind:namespace	line:9
+json	DB/SsdbClient.py	/^import json$/;"	kind:namespace	line:19
+jsonify	Api/ProxyApi.py	/^from flask import Flask, jsonify, request$/;"	kind:namespace	line:16
+main	Schedule/ProxyRefreshSchedule.py	/^def main(process_num=100):$/;"	kind:function	line:58
+optionxform	Util/utilClass.py	/^    def optionxform(self, optionstr):$/;"	kind:member	line:47
+os	DB/DbClient.py	/^import os$/;"	kind:namespace	line:16
+os	Util/GetConfig.py	/^import os$/;"	kind:namespace	line:16
+pop	DB/DbClient.py	/^    def pop(self, **kwargs):$/;"	kind:member	line:75
+pop	DB/RedisClient.py	/^    def pop(self):$/;"	kind:member	line:46
+pop	DB/SsdbClient.py	/^    def pop(self):$/;"	kind:member	line:64
+pp	Manager/ProxyManager.py	/^    pp = ProxyManager()$/;"	kind:variable	line:75
+proxy_getter_functions	Util/GetConfig.py	/^    def proxy_getter_functions(self):$/;"	kind:member	line:49
+put	DB/DbClient.py	/^    def put(self, value, **kwargs):$/;"	kind:member	line:72
+put	DB/RedisClient.py	/^    def put(self, value):$/;"	kind:member	line:37
+put	DB/SsdbClient.py	/^    def put(self, value):$/;"	kind:member	line:53
+random	DB/RedisClient.py	/^import random$/;"	kind:namespace	line:8
+random	DB/SsdbClient.py	/^import random$/;"	kind:namespace	line:18
+re	ProxyGetter/getFreeProxy.py	/^import re$/;"	kind:namespace	line:14
+re	Util/utilFunction.py	/^    import re$/;"	kind:namespace	line:34
+redis	DB/RedisClient.py	/^import redis$/;"	kind:namespace	line:10
+refresh	Api/ProxyApi.py	/^def refresh():$/;"	kind:function	line:45
+refresh	Manager/ProxyManager.py	/^    def refresh(self):$/;"	kind:member	line:32
+refreshPool	Schedule/ProxyRefreshSchedule.py	/^def refreshPool():$/;"	kind:function	line:53
+request	Api/ProxyApi.py	/^from flask import Flask, jsonify, request$/;"	kind:namespace	line:16
+requests	ProxyGetter/getFreeProxy.py	/^import requests$/;"	kind:namespace	line:16
+requests	Schedule/ProxyRefreshSchedule.py	/^import requests$/;"	kind:namespace	line:18
+requests	Util/utilFunction.py	/^    import requests$/;"	kind:namespace	line:46
+robustCrawl	ProxyGetter/getFreeProxy.py	/^from Util.utilFunction import robustCrawl, getHtmlTree$/;"	kind:namespace	line:21
+robustCrawl	Util/utilFunction.py	/^def robustCrawl(func):$/;"	kind:function	line:17
+sched	Schedule/ProxyRefreshSchedule.py	/^    sched = BlockingScheduler()$/;"	kind:variable	line:72
+sys	Api/ProxyApi.py	/^import sys$/;"	kind:namespace	line:17
+sys	DB/DbClient.py	/^import sys$/;"	kind:namespace	line:17
+sys	ProxyGetter/getFreeProxy.py	/^import sys$/;"	kind:namespace	line:15
+sys	Schedule/ProxyRefreshSchedule.py	/^import sys$/;"	kind:namespace	line:20
+time	Schedule/ProxyRefreshSchedule.py	/^import time$/;"	kind:namespace	line:19
+utilClass.py	Util/utilClass.py	1;"	kind:file	line:1
+utilFunction.py	Util/utilFunction.py	1;"	kind:file	line:1
+validProxy	Schedule/ProxyRefreshSchedule.py	/^    def validProxy(self):$/;"	kind:member	line:35
+verifyProxy	Util/utilFunction.py	/^def verifyProxy(proxy):$/;"	kind:function	line:28
