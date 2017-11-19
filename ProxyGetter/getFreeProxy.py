@@ -23,6 +23,8 @@ except:
     reload(sys)
     sys.setdefaultencoding('utf-8')
 
+sys.path.append('../')
+
 from Util.utilFunction import robustCrawl, getHtmlTree
 from Util.WebRequest import WebRequest
 
@@ -192,6 +194,20 @@ class GetFreeProxy(object):
             yield res
         time.sleep(5)
 
+    @staticmethod
+    def freeProxy10():  # 需要用代理访问
+        url = 'http://www.cnproxy.com/proxyedu{page}.html'
+        for page in range(1, 2):
+            page_url = url.format(page=page)
+            tree = getHtmlTree(page_url)
+
+            for idx in range(2, 101):
+                try:
+                    addr = tree.xpath('//*[@id="proxylisttb"]/table[3]/tbody/tr[{}]/td[1]/text()[1]'.format(idx))
+                    print addr
+                    yield addr
+                except Exception as e:
+                    pass
 
 if __name__ == '__main__':
     gg = GetFreeProxy()
@@ -212,5 +228,5 @@ if __name__ == '__main__':
 
     # for e in gg.freeProxySixth():
     #     print(e)
-    for e in gg.freeProxy7():
+    for e in gg.freeProxy8():
         print(e)
