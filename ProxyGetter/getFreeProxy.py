@@ -209,6 +209,15 @@ class GetFreeProxy(object):
                 except Exception as e:
                     pass
 
+    @staticmethod
+    def freeProxy11():
+        url = 'http://dev.kuaidaili.com/api/getproxy/?orderid=931107806741688&num=100&b_pcchrome=1&b_pcie=1&b_pcff=1&protocol=1&method=1&an_an=1&an_ha=1&format=json&sep=1'
+        req = requests.get(url)
+        result = req.json
+        for res in result['data']['proxy_list']:
+            yield res
+        time.sleep(2)
+
 if __name__ == '__main__':
     gg = GetFreeProxy()
     # for e in gg.freeProxyFirst():

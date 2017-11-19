@@ -2,13 +2,13 @@
 # !/usr/bin/env python
 """
 -------------------------------------------------
-   File Name：     ProxyApi.py  
-   Description :  
+   File Name：     ProxyApi.py
+   Description :
    Author :       JHao
    date：          2016/12/4
 -------------------------------------------------
    Change Activity:
-                   2016/12/4: 
+                   2016/12/4:
 -------------------------------------------------
 """
 __author__ = 'JHao'
@@ -51,7 +51,6 @@ def get():
 def refresh():
     # TODO refresh会有守护程序定时执行，由api直接调用性能较差，暂不使用
     # ProxyManager().refresh()
-    pass
     return 'success'
 
 
