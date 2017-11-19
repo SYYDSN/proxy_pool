@@ -11,6 +11,7 @@
                    2016/11/25:
 -------------------------------------------------
 """
+import time
 import re
 import requests
 
@@ -149,6 +150,48 @@ class GetFreeProxy(object):
         except Exception as e:
             pass
 
+    @staticmethod
+    def freeProxy7():
+        """快代理"""
+        url = 'http://www.kuaidaili.com/free/inha/{page}/'
+        for page in range(1, 100):
+            page_url = url.format(page=page)
+            tree = getHtmlTree(page_url)
+
+            for idx in range(1, 15):
+                try:
+                    ip = tree.xpath('//*[@id="list"]/table/tbody/tr[{}]/td[1]'.format(idx))[0].text
+                    port = tree.xpath('//*[@id="list"]/table/tbody/tr[{}]/td[2]'.format(idx))[0].text
+                    yield '{}:{}'.format(ip, port)
+                except Exception as e:
+                    pass
+
+    @staticmethod
+    def freeProxy8():
+        """快代理"""
+        url = 'http://www.kuaidaili.com/free/intr/{page}/'
+        for page in range(1, 100):
+            page_url = url.format(page=page)
+            tree = getHtmlTree(page_url)
+
+            for idx in range(1, 15):
+                try:
+                    ip = tree.xpath('//*[@id="list"]/table/tbody/tr[{}]/td[1]'.format(idx))[0].text
+                    port = tree.xpath('//*[@id="list"]/table/tbody/tr[{}]/td[2]'.format(idx))[0].text
+                    yield '{}:{}'.format(ip, port)
+                except Exception as e:
+                    pass
+
+    @staticmethod
+    def freeProxy9():
+        url = 'http://dev.kuaidaili.com/api/getproxy/?orderid=991105941669949&num=100&b_pcchrome=1&b_pcie=1&b_pcff=1&protocol=1&method=2&an_tr=1&an_an=1&an_ha=1&sep=1'
+        req = requests.get(url)
+        result = req.text
+        result = req.text.split('\n')
+        for res in result:
+            yield res
+        time.sleep(5)
+
 
 if __name__ == '__main__':
     gg = GetFreeProxy()
@@ -164,8 +207,10 @@ if __name__ == '__main__':
     # for e in gg.freeProxyFourth():
     #     print(e)
 
-    for e in gg.freeProxyFifth():
-        print(e)
+    # for e in gg.freeProxyFifth():
+    #     print(e)
 
     # for e in gg.freeProxySixth():
     #     print(e)
+    for e in gg.freeProxy7():
+        print(e)
