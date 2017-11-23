@@ -55,7 +55,7 @@ class ProxyCheck(ProxyManager, Thread):
                         self.db.put(proxy, num=int(counter) - 1)
 
                 proxy_item = self.db.pop()
-            sleep(60 * 5)
+            sleep(30)
 
 
 if __name__ == '__main__':
