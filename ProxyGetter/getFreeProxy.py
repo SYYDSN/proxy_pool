@@ -212,12 +212,11 @@ class GetFreeProxy(object):
     @staticmethod
     def freeProxy10():
         try:
-            for idx in range(1, 500):
+            for idx in range(1, 100):
                 url = 'http://www.httpdaili.com/api.asp?ddbh=93353817459342547&noinfo=true&old=1&sl=10'
                 req = requests.get(url)
                 for ip in req.text.split('\n'):
                     if ip != '':
-                        print ip
                         yield ip
                 time.sleep(0.5)
         except Exception as e:

@@ -2,13 +2,13 @@
 # !/usr/bin/env python
 """
 -------------------------------------------------
-   File Name：     ProxyManager.py  
-   Description :  
+   File Name：     ProxyManager.py
+   Description :
    Author :       JHao
    date：          2016/12/3
 -------------------------------------------------
    Change Activity:
-                   2016/12/3: 
+                   2016/12/3:
 -------------------------------------------------
 """
 __author__ = 'JHao'
@@ -40,20 +40,24 @@ class ProxyManager(object):
         :return:
         """
         for proxyGetter in self.config.proxy_getter_functions:
-            proxy_set = set()
-            # fetch raw proxy
-            for proxy in getattr(GetFreeProxy, proxyGetter.strip())():
-                if proxy:
-                    self.log.info('{func}: fetch proxy {proxy}'.format(func=proxyGetter, proxy=proxy))
-                    proxy_set.add(proxy.strip())
+            try:
+                proxy_set = set()
+                # fetch raw proxy
+                for proxy in getattr(GetFreeProxy, proxyGetter.strip())():
+                    if proxy:
+                        self.log.info('{func}: fetch proxy {proxy}'.format(func=proxyGetter, proxy=proxy))
+                        proxy_set.add(proxy.strip())
 
-            # store raw proxy
-            for proxy in proxy_set:
-                self.db.changeTable(self.useful_proxy_queue)
-                if self.db.exists(proxy):
-                    continue
-                self.db.changeTable(self.raw_proxy_queue)
-                self.db.put(proxy)
+                # store raw proxy
+                for proxy in proxy_set:
+                    self.db.changeTable(self.useful_proxy_queue)
+                    if self.db.exists(proxy):
+                        continue
+                    self.db.changeTable(self.raw_proxy_queue)
+                    self.db.put(proxy)
+            except Exception, e:
+                print e
+                continue
 
     def get(self):
         """
