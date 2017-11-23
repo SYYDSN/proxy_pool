@@ -209,6 +209,20 @@ class GetFreeProxy(object):
                 except Exception as e:
                     pass
 
+    @staticmethod
+    def freeProxy10():
+        try:
+            for idx in range(1, 500):
+                url = 'http://www.httpdaili.com/api.asp?ddbh=93353817459342547&noinfo=true&old=1&sl=10'
+                req = requests.get(url)
+                for ip in req.text.split('\n'):
+                    if ip != '':
+                        print ip
+                        yield ip
+                time.sleep(0.5)
+        except Exception as e:
+            print e
+
     # @staticmethod
     # def freeProxy11():
     #     url = 'http://dev.kuaidaili.com/api/getproxy/?orderid=931107806741688&num=100&b_pcchrome=1&b_pcie=1&b_pcff=1&protocol=1&method=1&an_an=1&an_ha=1&format=json&sep=1'
