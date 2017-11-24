@@ -209,18 +209,18 @@ class GetFreeProxy(object):
                 except Exception as e:
                     pass
 
-    @staticmethod
-    def freeProxy10():
-        try:
-            for idx in range(1, 2000):
-                url = 'http://www.httpdaili.com/api.asp?ddbh=93353817459342547&noinfo=true&old=1&sl=100'
-                req = requests.get(url)
-                for ip in req.text.split('\n'):
-                    if ip != '':
-                        yield ip
-                time.sleep(0.5)
-        except Exception as e:
-            print e
+    # @staticmethod
+    # def freeProxy10():
+    #     try:
+    #         for idx in range(1, 2000):
+    #             url = 'http://www.httpdaili.com/api.asp?ddbh=93353817459342547&noinfo=true&old=1&sl=100'
+    #             req = requests.get(url)
+    #             for ip in req.text.split('\n'):
+    #                 if ip != '':
+    #                     yield ip
+    #             time.sleep(0.5)
+    #     except Exception as e:
+    #         print e
 
     # @staticmethod
     # def freeProxy11():
